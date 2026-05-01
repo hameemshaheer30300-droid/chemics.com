@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>Level 1</title>
+</head>
+<body style="background-color:#a0cce9; text-align:center; font-size: 25px">
+    <h1 style="margin-top:100px;">What is that symbol?</h1>
+    <br><br>
+    <img src="C:\Users\User\.vscode\.vscode\Chemics\Ca(OH)2.jpg"><br><br><br>
+    <label>(Answer it with correct upper and lower case letters)</label><br><br>
+    <input id="op" style="font-size:30px" minlength="1" maxlength="25"><br><br><br>
+    <button id="up" style="font-size:30px">Give answer</button><br><br><br>
+    
+    <a id="a" style="background-color:rgb(0, 255, 191); font-size:40px; border-radius: 20px" href="i2.html"></a>
+    <a id="b" style="background-color:rgb(0, 255, 191); font-size:40px; border-radius: 20px" href="i3.html"></a>
+    <style>
+        img{
+            height:300px;
+            width:350px
+        }
+    </style>
+    <script>
+let up= document.getElementById("up")
+let a= document.getElementById("a")
+let b= document.getElementById("b")
+
+up.onclick= function(){
+    let op= document.getElementById("op").value
+
+if (op === "Calcium Hydroxide"){
+    b.textContent="Continue"
+}
+
+else{
+    a.textContent="Try again"
+}
+}
+
+    </script>
+    </body>
+    </html>
